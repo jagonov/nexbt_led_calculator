@@ -1,0 +1,5 @@
+{
+  "name": "nexBT LED Wall Calculator",
+  "description": "A professional calculator for LED wall deployments to estimate resolution, controller requirements, and power usage based on screen dimensions and pixel pitch.",
+  "requestFramePermissions": []
+}
