@@ -1,20 +1,86 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# LED Video Wall Calculator
+## Overview
 
-# Run and deploy your AI Studio app
+The LED Video Wall Calculator is a web-based engineering tool designed to help system integrators, AV engineers, and designers accurately plan LED video wall deployments.
 
-This contains everything you need to run your app locally.
+It converts high-level display requirements into detailed pixel, cabinet, control, network, and electrical specifications, reducing design errors and speeding up project estimation.
 
-View your app in AI Studio: https://ai.studio/apps/drive/183DZYPy9SSiJlOty-DE-6oWbY6T0zhl8
+### Key Capabilities
 
-## Run Locally
+#### When screen requirements are provided, the calculator generates:
 
-**Prerequisites:**  Node.js
+   - Total pixel count
 
+   - Final display resolution (W × H)
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+   - Total number of LED cabinets
+
+   - LAN ports required
+
+#### Recommended LED controller (based on selection)
+
+#### Number of CO (Control Outputs)
+
+#### Main breaker ampere-trip (AT) rating
+
+### Visualization
+
+The tool also provides a visual layout of the deployment, including:
+
+Overall LED wall dimensions
+
+Cabinet grid arrangement (rows × columns)
+
+Cabinets connected per LAN port
+
+Cabinets connected per CO
+
+Logical distribution for signal and power planning
+
+This visualization helps validate controller loading, signal limits, and physical layout before installation.
+
+### How to Use
+
+1. Open the calculator using the link below.
+
+2. Enter the LED wall requirements:
+
+   - Cabinet size
+
+3. Review the automatically generated results:
+
+   - Resolution and pixel totals
+
+   - Cabinet count
+
+   - Network and control requirements
+
+   - Electrical breaker sizing
+
+4. Use the visual layout to verify signal and power distribution.
+
+### Electrical Assumptions
+
+Unless otherwise stated, the calculator assumes:
+
+Single-phase AC supply
+
+Standard operating voltage (configurable if extended later)
+
+Breaker sizing includes safety margin
+
+Peak Power LED cabinet power consumption
+
+Continuous operation load considerations
+
+These assumptions are intended for preliminary engineering and estimation. Final designs should always be validated against manufacturer datasheets and local electrical codes.
+
+### Intended Users
+
+LED video wall system integrators
+
+AV and broadcast engineers
+
+Electrical designers
+
+Project estimators and technical sales teams
